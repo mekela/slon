@@ -405,6 +405,130 @@
         color: #3f3f3f;
         font-weight: 300;
     }
+    .header__trigger{
+        display: none;
+        cursor: pointer;
+        i{
+            display: block;
+            position: relative;
+            width: 25px;
+            height: 2px;
+            background: #5859a8;
+            margin: 8px 0 0 18px;
+            &:before, &:after{
+                width: 25px;
+                height: 2px;
+                background: #5859a8;
+                content: '';
+                position: absolute; 
+                left: 0;
+                top: 0;
+            }
+            &:before{
+                top: -8px;
+            }
+            &:after{
+                bottom: -8px;
+                top: auto;
+            }
+        }
+    }
+    .mobile-menu{
+        position: fixed;
+        top: 0;
+        z-index: 101;
+        background: #fff;
+        height: 100%;
+        width: 255px;
+        overflow-y: auto;
+        font-size: 16px;
+        color: #3f3f3f;
+        opacity: 0;
+        right: -260px;
+        transition: all 0.5s ease;
+        &__overlay{
+            background: #32336e;
+            opacity: 0.3;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        &.active{
+            right: 0;
+            opacity: 1;
+        }
+        &__line{
+            padding: 10px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            overflow: hidden;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+        &__close{
+            float: right;
+            background: none;
+            border: none;
+            position: relative;
+            width: 22px;
+            height: 22px;
+            top: 10px;
+            &:before, &:after{
+                width: 25px;
+                height: 2px;
+                background: #5859a8;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(45deg);
+            }
+            &:after{
+                transform: rotate(-45deg);
+            }
+        }
+        ul{
+            font-size: 16px;
+            color: #3f3f3f;
+            a{
+                text-decoration: none;
+                padding: 7px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                color: #3f3f3f;
+            }
+        }
+        &__link{
+            padding: 30px 0;
+            a{
+                color: #5859a8;
+            }
+        }
+        &__text{
+            font-size: 14px;
+            p{
+                padding-bottom: 12px;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        &__lang{
+            a{
+                padding: 0 10px 0 0;
+                &.active{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
   /*----------end-header----------*/
   /*----------main----------*/
   .main {
@@ -440,6 +564,9 @@
                     margin-right: 7px;
                 }
             }
+        }
+        &__img-mobile{
+            display: none;
         }
     }
     .box{
@@ -566,6 +693,7 @@
     .region{
         background: url(../img/map.jpg) no-repeat center top;
         padding-bottom: 90px;
+        margin-top: 50px;
         &__items{
             ul{
                 display: flex;
@@ -586,6 +714,10 @@
                     text-decoration: none;
                     text-align: center;
                     line-height: 36px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        box-shadow: 0 2px 5px #33cc66;
+                    }
                 }
             }
             &.region__inline{
@@ -622,6 +754,21 @@
          
         &::-webkit-scrollbar-thumb {
           background-color: #5859a8;
+        }
+    }
+    .slick-dots li {
+        width: auto;
+        height: auto;
+        button{
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #939db7;
+        }
+        &.slick-active{
+            button{
+                background: #5859a8;
+            }
         }
     }
   /*----------end main----------*/
