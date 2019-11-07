@@ -35,10 +35,20 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.region__items-slider').slick({
+      infinite: true,
+      dots: true,
+    });
 
     //toggle
     $( ".footer__center h6" ).click(function() {
         $( this ).toggleClass( "active" );
+    });
+
+    //show slider
+    $( ".review__show" ).click(function() {
+        $( this ).parent().prev().toggle( "fast" );
+        $( this ).parent().hide( "fast" );
     });
 
     //menu

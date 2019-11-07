@@ -1,4 +1,4 @@
-<div class="bnr">
+<div class="bnr" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="bnr__img-mobile"><img src="img/top-bg-mob.png" alt=""></div>
         <div class="row">
@@ -18,9 +18,9 @@
 </div>
 <div class="box">
     <div class="container">
-        <div class="title">Преимущества оформления кредита у нас</div>
+        <h2 class="title">Преимущества оформления кредита у нас</h2>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 hide-mobile">
                 <figure class="tag-big">
                     <i><img src="img/tag1.png" alt=""></i>
                     <figcaption>
@@ -31,7 +31,16 @@
             </div>
             <div class="col-lg-8">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6 hide-desktop">
+                        <figure class="tag-small">
+                            <i><img src="img/tag1.png" alt=""></i>
+                            <figcaption>
+                                Быстрое оформление всего <br>
+                                <strong>7 минут</strong>
+                            </figcaption>
+                        </figure> 
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag2.png" alt=""></i>
                             <figcaption>
@@ -40,7 +49,7 @@
                             </figcaption>
                         </figure> 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag3.png" alt=""></i>
                             <figcaption>
@@ -49,7 +58,7 @@
                             </figcaption>
                         </figure> 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag4.png" alt=""></i>
                             <figcaption>
@@ -58,7 +67,7 @@
                             </figcaption>
                         </figure> 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag5.png" alt=""></i>
                             <figcaption>
@@ -67,7 +76,7 @@
                             </figcaption>
                         </figure> 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag6.png" alt=""></i>
                             <figcaption>
@@ -76,7 +85,7 @@
                             </figcaption>
                         </figure> 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6">
                         <figure class="tag-small">
                             <i><img src="img/tag7.png" alt=""></i>
                             <figcaption>
@@ -93,15 +102,15 @@
 
 <div class="box blue">
     <div class="container">
-        <div class="title">Как оформить?</div>
+        <h2 class="title">Как оформить?</h2>
         <div class="row">
             <div class="col-lg-4">
                 <figure class="tag-small align-items-start">
                     <i><img src="img/tag8.png" alt=""></i>
                     <figcaption>
-                            Выберите сумму и срок<br>
-                            кредита и нажмите <br>
-                            <a href="#">Получить кредит</a>
+                            Выберите сумму и срок
+                            кредита и нажмите 
+                            <div><a href="#">Получить кредит</a></div>
                     </figcaption>
                 </figure> 
             </div>
@@ -137,7 +146,7 @@
 
 <div class="box">
     <div class="container">
-        <div class="title">Способы погашения</div>
+        <h2 class="title">Способы погашения</h2>
         <div class="row">
             <div class="col-lg-4">
                 <figure class="tag-small align-items-start">
@@ -193,7 +202,7 @@
 
 <div class="box blue reviews-box">
     <div class="container">
-        <div class="title">Отзывы</div>
+        <h2 class="title">Отзывы</h2>
         <div class="reviews">
             <div class="review">
                 <figure>
@@ -204,7 +213,10 @@
                     </figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                <div class="text-center"><a href="#">показать полностью</a></div>
+                <div class="review__hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div class="text-center"><a href="JavaScript:Void(0);" class="review__show">показать полностью</a></div>
             </div>
              <div class="review">
                 <figure>
@@ -215,7 +227,10 @@
                     </figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                <div class="text-center"><a href="#">показать полностью</a></div>
+                <div class="review__hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div class="text-center"><a href="JavaScript:Void(0);" class="review__show">показать полностью</a></div>
             </div>
              <div class="review">
                 <figure>
@@ -226,7 +241,10 @@
                     </figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                <div class="text-center"><a href="#">показать полностью</a></div>
+                <div class="review__hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div class="text-center"><a href="JavaScript:Void(0);" class="review__show">показать полностью</a></div>
             </div>
              <div class="review">
                 <figure>
@@ -237,7 +255,10 @@
                     </figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                <div class="text-center"><a href="#">показать полностью</a></div>
+                <div class="review__hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div class="text-center"><a href="JavaScript:Void(0);" class="review__show">показать полностью</a></div>
             </div>
              <div class="review">
                 <figure>
@@ -248,7 +269,10 @@
                     </figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                <div class="text-center"><a href="#">показать полностью</a></div>
+                <div class="review__hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div class="text-center"><a href="JavaScript:Void(0);" class="review__show">показать полностью</a></div>
             </div>
         </div>
     </div>
@@ -256,41 +280,41 @@
 
 <div class="box">
     <div class="container">
-        <div class="title">О нас в СМИ</div>
+        <h2 class="title">О нас в СМИ</h2>
         <div class="slider">
             <div class="slider-item">
                 <figure>
-                    <img src="img/1+1.png" alt="">
+                        <a href="#"><img src="img/1+1.png" alt=""></a> 
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
             <div class="slider-item">
                 <figure>
-                    <img src="img/today.png" alt="">
+                    <a href="#"><img src="img/today.png" alt=""></a>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
             <div class="slider-item">
                 <figure>
-                    <img src="img/vesti.png" alt="">
+                    <a href="#"><img src="img/vesti.png" alt=""></a>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
             <div class="slider-item">
                 <figure>
-                    <img src="img/1+1.png" alt="">
+                    <a href="#"><img src="img/1+1.png" alt=""></a> 
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
             <div class="slider-item">
                 <figure>
-                    <img src="img/today.png" alt="">
+                    <a href="#"><img src="img/today.png" alt=""></a>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
             <div class="slider-item">
                 <figure>
-                    <img src="img/vesti.png" alt="">
+                    <a href="#"><img src="img/vesti.png" alt=""></a>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">...</a></figcaption>
                 </figure>
             </div>
@@ -298,11 +322,10 @@
     </div>
     <div class="region">
         <div class="container">
-            <div class="title">SlonCredit в других регионах Украины</div>
+            <h2 class="title">SlonCredit в других регионах Украины</h2>
             <div class="row">
-                <div class="col-lg-10">
-                            
-                    <nav class="region__items">
+                <div class="col-lg-10">    
+                    <nav class="region__items region__items-hide-mobile">
                         <ul>
                             <li><a href="#">Винница</a></li>
                             <li><a href="#">Ивано-Франковск</a></li>
@@ -326,7 +349,37 @@
                             <li><a href="#">Черкассы</a></li>
                         </ul>
                     </nav>
-
+                    <div class="region__items-slider">
+                        <nav class="region__items">
+                            <ul>
+                                <li><a href="#">Винница</a></li>
+                                <li><a href="#">Ивано-Франковск</a></li>
+                                <li><a href="#">Николаев</a></li>
+                                <li><a href="#">Тернополь</a></li>
+                                <li><a href="#">Днепр</a></li>
+                                <li><a href="#">Киев</a></li>
+                                <li><a href="#">Одесса</a></li>
+                                <li><a href="#">Ужгород</a></li>
+                                <li><a href="#">Донецк</a></li>
+                                <li><a href="#">Луганск</a></li>
+                                
+                            </ul>
+                        </nav>
+                        <nav class="region__items">
+                            <ul>
+                                    <li><a href="#">Полтава</a></li>
+                                <li><a href="#">Харьков</a></li>
+                                <li><a href="#">Житомир</a></li>
+                                <li><a href="#">Луцк</a></li>
+                                <li><a href="#">Ровно</a></li>
+                                <li><a href="#">Хмельницкий</a></li>
+                                <li><a href="#">Запорожье</a></li>
+                                <li><a href="#">Львов</a></li>
+                                <li><a href="#">Сумы</a></li>
+                                <li><a href="#">Черкассы</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -351,7 +404,7 @@
 
 <div class="box">
     <div class="container">
-        <div class="title">Услуги кредитования</div>       
+        <h2 class="title">Услуги кредитования</h2>       
         <nav class="region__items region__inline">
             <ul>
                 <li><a href="#">Деньги до зарплаты онлайн за 20 минут</a></li>
