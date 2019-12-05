@@ -16,6 +16,9 @@
     }
 }
 @media screen and (max-width: 992px){
+    .main{
+        padding: 40px 0 0 0;
+    }
     .hide-desktop{
         display: block;
     }
@@ -74,6 +77,10 @@
     .title{
         font-size: 20px;
         padding-bottom: 20px;
+        &.mobile-title-center{
+            text-align: center;
+            color: #5859a8;
+        }
     }
     .tag-big{
         display: flex;

@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="initial-scale=1"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/plagins.css">
@@ -18,7 +18,7 @@
 <body>
 
 <div class="global-wrapper">
-    
+    <!-- HEADER -->
     <header class="header">
       <div class="container">
         <div class="header__section">
@@ -34,7 +34,7 @@
           <div class="header__phone">
             <a href="tel:080 033 03 83">080 033 03 83</a>
             Бесплатно по Украине
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone "></i>
           </div>
           <div class="header__lang">
             <a href="#">UA</a>
@@ -90,12 +90,12 @@
       </div>
     </div>
     <div class="mobile-menu__overlay"></div>
-    
+    <!-- /HEADER -->
 
-    
+    <!-- MAIN -->
     <div class="main">
-        
-        <div class="bnr" style="background-image:url(img/bg.jpg)">
+        <!-- add partials here -->
+        <div class="bnr" style="background-image: url(img/bg.jpg);">
             <div class="container">
                 <div class="bnr__img-mobile"><img src="img/top-bg-mob.png" alt=""></div>
                 <div class="row">
@@ -525,34 +525,34 @@
             </div>
         </div>
     </div>
-    
+    <!-- /MAIN -->
 
     <div class="hidden-block">
     
         <div id="call_success">
              <div class="call-success-wrap">
-                 <div class="call-success-title"></div>
-                 <div class="call-success-subtitle"></div>
+                 <div class="call-success-title"><!-- Спасибо за заявку!--></div>
+                 <div class="call-success-subtitle"><!-- Мы свяжемся с Вами в ближайшее время --></div>
              </div>
         </div>
     
         <div id="call-popup">
             <form action="ajax.php" class="contact-form">
                 <div class="contact-form-title">
-                    
+                    <!-- Title -->
                 </div>
                 <div class="contact-form-row cfix">
                     <div class="contact-form-item">
                         <div class="contact-form-item-input form_row">
                             <div class="form_input">
-                                <input type="text" name="contact_name" required="required" placeholder="Ваше Имя">
+                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
                             </div>
                         </div>
                     </div>
                     <div class="contact-form-item">
                         <div class="contact-form-item-input form_row">
                             <div class="form_input">
-                                <input type="text" name="contact_tel" required="required" placeholder="Ваш номер" class="tel-mask">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
                             </div>
                         </div>
                     </div>
@@ -560,7 +560,7 @@
                 <div class="contact-form-row cfix">
                     <div class="contact-form-item">
                         <button type="submit" class="contact-submit">
-                            <span></span>
+                            <span><!-- Отправить заявку  --></span>
                         </button>
                     </div>
                 </div>
@@ -569,7 +569,7 @@
     
     </div>
 
-    
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__info">
             <div class="container">
@@ -617,7 +617,7 @@
                             <a href="#"><i class="fab fa-google-plus-g"></i></a>
                         </nav>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 ">
                         <h6>Узнайте о нас больше </h6>
                         <ul>
                             <li><a href="#">Правовая информация</a></li>
@@ -629,7 +629,7 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
-                     <div class="col-lg-3">
+                     <div class="col-lg-3 ">
                         <h6>Частопосещаемые разделы</h6>
                         <ul>
                             <li><a href="#">Правовая информация</a></li>
@@ -670,11 +670,11 @@
             </div>
         </div>
     </footer>
-    
+    <!-- /FOOTER -->
 
 </div>
 
-
+<!-- SCRIPTS -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -684,7 +684,7 @@
 
 <script src="scripts/main.js"></script>
 
-
+<!-- /SCRIPTS -->
 
 </body>
 </html>

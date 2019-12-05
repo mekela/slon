@@ -60,6 +60,26 @@ $(document).ready(function(){
         $( '.mobile-menu' ).removeClass( "active" );
         $( '.mobile-menu__overlay' ).hide(  );
     });
+
+    //accordion
+    $( ".lk__table-accordion-trigger" ).click(function() {
+        $( this ).toggleClass( "active" );
+        $( this ).next().slideToggle( "fast" );
+    });
+    $( ".accordion-trigger" ).click(function() {
+        $( this ).toggleClass( "active" );
+        $( this ).next().slideToggle( "fast" );
+    });
+
+    //tabs
+    $('.faq-links li a').click(function(event){
+        event.preventDefault();
+        $('.faq-links li a').removeClass('active');
+        $(this).addClass('active');
+        $('.faq-content').hide();
+        $($(this).attr('href')).show();
+    });
+    
 });
 
 $(window).load(function(){
