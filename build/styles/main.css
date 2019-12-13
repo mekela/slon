@@ -757,6 +757,10 @@ textarea {
   font-weight: 300;
 }
 
+.header__lang span {
+  text-decoration: underline;
+}
+
 .header__trigger {
   display: none;
   cursor: pointer;
@@ -1121,6 +1125,12 @@ textarea {
 .review figure figcaption {
   font-size: 14px;
   color: #b2b2b2;
+}
+
+.review figure img {
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .review p {
@@ -1617,6 +1627,13 @@ textarea {
   max-width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .text img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .text figure.text-center img {
   display: block;
   margin: 0 auto;
@@ -1734,6 +1751,19 @@ textarea {
   display: block;
   width: 100%;
   opacity: 0.7;
+}
+
+.text .button {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .text .button {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 280px;
+    display: block;
+  }
 }
 
 .text__img {
@@ -3338,9 +3368,35 @@ textarea {
   }
 }
 
+.news__img {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
 .news__img img {
   display: block;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .news__img img {
+    position: static;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .news__img {
+    height: auto;
+  }
 }
 
 .news__date {
@@ -3528,6 +3584,15 @@ textarea {
   padding-bottom: 15px;
 }
 
+.news__article .text {
+  font-size: 14px;
+}
+
+.news__article figure img {
+  display: block;
+  width: 100%;
+}
+
 .news__article .news__date {
   text-align: right;
 }
@@ -3619,6 +3684,7 @@ textarea {
   text-decoration: none;
   position: relative;
   transition: all 0.5s ease;
+  display: block;
 }
 
 .faq-links a:before {
@@ -3629,7 +3695,7 @@ textarea {
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 7px;
   background-color: #5859a8;
   opacity: 0;
 }
@@ -3696,6 +3762,10 @@ textarea {
 .faq-content ul {
   list-style: disc;
   list-style-position: inside;
+}
+
+.faq-content p, .faq-content h2, .faq-content h3, .faq-content h1, .faq-content h4, .faq-content ul, .faq-content ol {
+  padding-bottom: 20px;
 }
 
 .faq-mobile {
@@ -3796,6 +3866,14 @@ textarea {
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 30px;
+}
+
+.contacts__info-item a {
+  text-decoration: none;
+}
+
+.contacts__info-item a:hover {
+  text-decoration: underline;
 }
 
 .contacts__info-item strong {

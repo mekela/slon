@@ -475,6 +475,9 @@
         font-size: 16px;
         color: #3f3f3f;
         font-weight: 300;
+        span{
+          text-decoration: underline;
+        }
     }
     .header__trigger{
         display: none;
@@ -778,6 +781,11 @@
             figcaption{
                 font-size: 14px;
                 color: #b2b2b2;
+            }
+            img{
+              min-width: 100px;
+              width: 100px;
+              height: 100px;
             }
         }
         p{
@@ -1193,7 +1201,10 @@
   }
   img{
     max-width: 100%;
-    
+    @media screen and (max-width: 992px){
+      display: block;
+      margin: 0 auto;
+    }
   }
   figure.text-center{
     img{
@@ -1281,6 +1292,15 @@
        width: 100%;
        opacity: 0.7;
      }
+   }
+   .button{
+     margin-bottom: 20px;
+    @media screen and (max-width: 992px){
+      margin: 0 auto;
+      margin-bottom: 15px;
+      max-width: 280px;
+      display: block;
+    }
    }
    &__img{
      display: block;

@@ -8,6 +8,12 @@ $(document).ready(function(){
         dots: true,
         responsive: [
             {
+              breakpoint: 1280,
+              settings: {
+                arrows: false,
+              }
+            }, 
+            {
               breakpoint: 992,
               settings: {
                 slidesToShow: 1,
@@ -24,6 +30,12 @@ $(document).ready(function(){
         slidesToScroll: 3,
         dots: true,
         responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    arrows: false,
+                }
+            }, 
             {
               breakpoint: 992,
               settings: {
