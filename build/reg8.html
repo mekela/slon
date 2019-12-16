@@ -90,7 +90,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <!-- content -->
-                    <div class="reg__box reg__box-hide-mobile">
+                    <form class="reg__box reg__box-hide-mobile">
                         <div class="reg__text">
                             <div class="row">
                                 <div class="col-lg-3"><img src="img/checkmark.png" alt=""></div>
@@ -105,8 +105,8 @@
                             <img src="img/bank.png" alt="">
                         </div>
                         <div class="reg__form-submit"><input type="submit" value="Продолжить" class="button"></div>
-                    </div>
-                    <div class="reg__box-show-mobile">
+                    </form>
+                    <form class="reg__box-show-mobile">
                         <div class="reg__text">
                             <div class="title title-md text-center pb10">Проверка карты</div>
                             <p>Чтобы удостовериться, что карта, на которую мы отправим средства, является активной, платёжный сервис WayForPay попробует списать 1  гривну, после чего вернёт её на Вашу карту.</p>
@@ -137,7 +137,7 @@
                             </div>
                             <div class="reg__form-submit"><input type="submit" value="Продолжить" class="button"></div>
                         </div>
-                    </div>
+                    </form>
                     <!-- /content -->
                 </div>
             </div>
@@ -299,6 +299,10 @@
 <script src="scripts/validate_script.js"></script>
 
 <script src="scripts/plagins.js"></script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl9nQmaXkMHN9lZ6WKhSk3ot9gukwM4Ro&callback=initMap">
+    </script>
 
 <script src="scripts/main.js"></script>
 

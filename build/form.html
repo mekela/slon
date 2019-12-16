@@ -60,10 +60,6 @@
             <li><a href="#">Документы</a></li>
             <li><a href="#">Банковские карты</a></li>
             <li><a href="#">Персональные данные</a></li>
-          </ul>
-        </div>
-        <div class="mobile-menu__line">
-          <ul>
             <li><a href="#">Как взять</a></li>
             <li><a href="#">Как погасить</a></li>
             <li><a href="#">Вопросы и ответы</a></li>
@@ -130,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="form">
+                    <form class="form">
                         <div class="form__section">
                             <div class="title">Исполнитель заявки</div>
                             <div class="reg__form-item reg__form-item-flex">
@@ -326,6 +322,7 @@
                                     <a href="#"><i class="fas fa-link"></i>Загрузить</a>
                                     <small>(с камеры / с диска)</small>
                                 </div>
+                                <div class="lk__doc-add-input"><input type="file"></div>
                             </div>
                             <div class="reg__form-checkbox">
                                 <label class="reg__form-checkbox-item">
@@ -336,7 +333,7 @@
                             </div>
                             <div class="reg__form-submit"><input type="submit" value="Отправить" class="button"></div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -664,6 +661,10 @@
 <script src="scripts/validate_script.js"></script>
 
 <script src="scripts/plagins.js"></script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl9nQmaXkMHN9lZ6WKhSk3ot9gukwM4Ro&callback=initMap">
+    </script>
 
 <script src="scripts/main.js"></script>
 

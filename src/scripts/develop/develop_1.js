@@ -91,6 +91,8 @@ $(document).ready(function(){
         $('.faq-content').hide();
         $($(this).attr('href')).show();
     });
+
+    
     
 });
 
@@ -101,3 +103,32 @@ $(window).load(function(){
 $(window).resize(function(){
 
 });
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+window.onload = function () {
+  var el, c1;
+  el = document.querySelector('.circle-chart--with-track');
+  c1 = new CircleChart(el, { trackColour: '#f1f4fa', colour: '#33cc66' });
+  if (window.MutationObserver) {
+    var config = { attributes: false, childList: true, characterData: false };
+    var observer = new MutationObserver(function(mutations) {
+        console.log(c1.inner.innerText);
+        c1.changeValue(parseFloat(c.inner.innerHTML));  
+    });
+    observer.observe(c1.elem, config);
+  }
+}
+
+
+
+

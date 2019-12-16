@@ -60,10 +60,6 @@
             <li><a href="#">Документы</a></li>
             <li><a href="#">Банковские карты</a></li>
             <li><a href="#">Персональные данные</a></li>
-          </ul>
-        </div>
-        <div class="mobile-menu__line">
-          <ul>
             <li><a href="#">Как взять</a></li>
             <li><a href="#">Как погасить</a></li>
             <li><a href="#">Вопросы и ответы</a></li>
@@ -186,7 +182,9 @@
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.064962289929!2d30.39899761573165!3d50.45851497947644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc5c22be175f%3A0x54912cb19b147997!2z0L_RgNC-0YHQv9C10LrRgiDQn9C10YDQtdC80L7Qs9C4LCA5MCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1575552477187!5m2!1suk!2sua" width="490" height="490" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                            <div class="contacts__map">
+                                <div id="map"></div>
+                            </div>
                         </div>
                     </div>
                     <!-- /content -->
@@ -350,6 +348,10 @@
 <script src="scripts/validate_script.js"></script>
 
 <script src="scripts/plagins.js"></script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl9nQmaXkMHN9lZ6WKhSk3ot9gukwM4Ro&callback=initMap">
+    </script>
 
 <script src="scripts/main.js"></script>
 
