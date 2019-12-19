@@ -94,13 +94,175 @@ $(window).load(function () {});
 $(window).resize(function () {});
 
 // Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    var uluru = { lat: -25.344, lng: 131.036 };
-    // The map, centered at Uluru
-    var map = new google.maps.Map(document.getElementById('map'), { zoom: 4, center: uluru });
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({ position: uluru, map: map });
+
+function initMap(e) {
+    var a,
+        t,
+        i = new google.maps.StyledMapType([{
+        elementType: "geometry",
+        stylers: [{
+            color: "#f5f5f5"
+        }]
+    }, {
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#002e63"
+        }]
+    }, {
+        elementType: "labels.text.stroke",
+        stylers: [{
+            color: "none"
+        }]
+    }, {
+        featureType: "administrative",
+        elementType: "geometry.stroke",
+        stylers: [{
+            color: "#c9b2a6"
+        }]
+    }, {
+        featureType: "administrative.land_parcel",
+        elementType: "geometry.stroke",
+        stylers: [{
+            color: "#dcd2be"
+        }]
+    }, {
+        featureType: "administrative.land_parcel",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#ae9e90"
+        }]
+    }, {
+        featureType: "landscape.natural",
+        elementType: "geometry",
+        stylers: [{
+            color: "#f5f5f5"
+        }]
+    }, {
+        featureType: "poi",
+        elementType: "geometry",
+        stylers: [{
+            color: "#eeeeee"
+        }]
+    }, {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#f18c18"
+        }]
+    }, {
+        featureType: "poi.park",
+        elementType: "geometry.fill",
+        stylers: [{
+            color: "#eeeeee"
+        }]
+    }, {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#f18c18"
+        }]
+    }, {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{
+            color: "#ffffff"
+        }]
+    }, {
+        featureType: "road.arterial",
+        elementType: "geometry",
+        stylers: [{
+            color: "#ffffff"
+        }]
+    }, {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{
+            color: "#dadada"
+        }]
+    }, {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{
+            color: "#dadada"
+        }]
+    }, {
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry",
+        stylers: [{
+            color: "#dadada"
+        }]
+    }, {
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry.stroke",
+        stylers: [{
+            color: "#dadada"
+        }]
+    }, {
+        featureType: "road.local",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#898989"
+        }]
+    }, {
+        featureType: "transit.line",
+        elementType: "geometry",
+        stylers: [{
+            color: "#dadada"
+        }]
+    }, {
+        featureType: "transit.line",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#8f7d77"
+        }]
+    }, {
+        featureType: "transit.line",
+        elementType: "labels.text.stroke",
+        stylers: [{
+            color: "#ebe3cd"
+        }]
+    }, {
+        featureType: "transit.station",
+        elementType: "geometry",
+        stylers: [{
+            color: "#dfd2ae"
+        }]
+    }, {
+        featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [{
+            color: "#e0e6ec"
+        }]
+    }, {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{
+            color: "#e0e6ec"
+        }]
+    }], {
+        name: "Styled Map"
+    }),
+        c = new google.maps.Map(document.getElementById("map"), {
+        center: {
+            lat: 47.0202844,
+            lng: 28.8335028
+        },
+        zoom: 14,
+        mapTypeControlOptions: {
+            mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"]
+        }
+    }),
+        l = new google.maps.InfoWindow();
+    for (t = 0; t < 3; t++) {
+        a = new google.maps.Marker({
+            position: new google.maps.LatLng(officess[t].lat, officess[t].lng),
+            map: c
+        }), google.maps.event.addListener(a, "click", function (e, a) {
+            return function () {
+                l.setContent(officess[a].message), l.open(c, e);
+            };
+        }(a, t));
+    }c.mapTypes.set("styled_map", i), c.setMapTypeId("styled_map");
 }
 
 window.onload = function () {

@@ -914,11 +914,11 @@ textarea {
   display: block;
 }
 
-.mobile-menu__lang a {
+.mobile-menu__lang a, .mobile-menu__lang span {
   padding: 0 10px 0 0;
 }
 
-.mobile-menu__lang a.active {
+.mobile-menu__lang a.active, .mobile-menu__lang span.active {
   text-decoration: none;
   font-weight: bold;
 }
@@ -1473,6 +1473,14 @@ textarea {
   margin: 0 auto;
 }
 
+.modal-calc {
+  display: none;
+}
+
+.modal-calc .fancybox-close-small {
+  display: none;
+}
+
 /*----------end modal----------*/
 /*----------form----------*/
 .form {
@@ -1652,6 +1660,9 @@ textarea {
 @media screen and (max-width: 992px) {
   .text__content {
     padding: 40px 0;
+  }
+  .text__content .reviews .slick-dots {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -3652,6 +3663,12 @@ textarea {
   }
 }
 
+.news__article-img {
+  overflow: hidden;
+  max-height: 270px;
+  position: relative;
+}
+
 .news__nav {
   color: #c1c1c1;
   font-size: 16px;
@@ -3710,6 +3727,12 @@ textarea {
   box-shadow: 0 5px 15px rgba(88, 89, 168, 0.5);
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.pager ul li a.pager__arrow:hover {
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
 }
 
 .faq-links {

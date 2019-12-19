@@ -80,7 +80,7 @@
           </p>
         </div>
         <nav class="mobile-menu__lang">
-          <a href="#" class="active">RU    </a>
+          <span class="active">RU    </span>
           <a href="#">UA</a>
         </nav>
       </div>
@@ -101,7 +101,7 @@
                         <b>Заголовок статьи</b>
                     </nav>
                     <div class="news__article">
-                        <figure><img src="img/news2.jpg" alt=""></figure>
+                        <figure class="news__article-img"><img src="img/news2.jpg" alt=""></figure>
                         <article class="news__article-text">
                             <div class="row">
                                 <div class="col-lg-6 order-lg-1"><div class="news__date">25.09.2019</div></div>
@@ -319,7 +319,12 @@
     </script>
 
 <script src="scripts/main.js"></script>
-
+<script type="text/javascript">
+    var daysLang = 'ru';
+    var checkMap = false;
+                var officess = [ { "lat": 47.0382681, "lng": 28.8042144, "message": "ул. Каля Ешилор 9, Кишинёв, Скулянка" }, { "lat": 47.046508, "lng": 28.8857758, "message": "ул. Мирча чел Бэтрын 2/1, Кишинёв, Чеканы" }, { "lat": 47.0189641, "lng": 28.8331487, "message": "ул. 31 Августа 1989 64, Кишинёв, Центр" } ];
+                var API_HOST = 'https://api.master.md.aventus.work/loan-price';
+</script>
 <!-- /SCRIPTS -->
 
 </body>
