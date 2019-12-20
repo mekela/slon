@@ -66,8 +66,16 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 102%;
-            height: 102%;
+            width: 180px;
+            height: 180px;
+            @media screen and (max-width: 1200px){
+                // width: 140px;
+                // height: 140px;
+                // font-size: 10px;
+                transform: scale(0.8);
+                top: 0%;
+                left: 0%;
+            }
         }
         .circle-chart__text{
             display: none;
@@ -105,9 +113,10 @@
             font-weight: 700;
         }
         @media screen and (max-width: 1200px){
-            width: 140px;
-            height: 140px;
-            font-size: 10px;
+            // width: 140px;
+            // height: 140px;
+            // font-size: 10px;
+            transform: scale(0.8);
         }
     }
     &__timing-title{

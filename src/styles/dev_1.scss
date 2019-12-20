@@ -604,7 +604,7 @@
             }
         }
         &__lang{
-            a{
+            a, span{
                 padding: 0 10px 0 0;
                 &.active{
                     text-decoration: none;
@@ -1079,6 +1079,13 @@
       }
     }
   }
+
+  .modal-calc{
+    display: none;
+    .fancybox-close-small{
+      display: none;
+    }
+  }
   /*----------end modal----------*/
 
    /*----------form----------*/ 
@@ -1219,6 +1226,9 @@
      padding: 55px 0;
      @media screen and (max-width: 992px){
       padding: 40px 0;
+      .reviews .slick-dots{
+        padding-bottom: 0 !important;
+      }
     }
      &.white{
        background: #fff;

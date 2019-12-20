@@ -2531,8 +2531,16 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  width: 102%;
-  height: 102%;
+  width: 180px;
+  height: 180px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lk__timing-circle-wrap .radial-graph, .lk__timing-circle-wrap .circle-chart {
+    transform: scale(0.8);
+    top: 0%;
+    left: 0%;
+  }
 }
 
 .lk__timing-circle-wrap .circle-chart__text {
@@ -2579,9 +2587,7 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .lk__timing-circle {
-    width: 140px;
-    height: 140px;
-    font-size: 10px;
+    transform: scale(0.8);
   }
 }
 
